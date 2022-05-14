@@ -1,0 +1,60 @@
+body{
+  font-family: Impact;
+}
+a{
+  color:black;
+  text-decoration: none;
+}
+h1{
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 3px 3px Lavender;
+}
+ul{
+  list-style-type: none;
+  width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-left: 0px;
+  height: 60px;
+}
+li{
+  display: inline;
+  float: left;
+}
+li a{
+  display: block;
+  padding: 14px 16px;
+  background-color: Lavender;
+  text-align: center;
+}
+li a:hover {
+  background-color: WhiteSmoke;
+}
+.active{
+  background-color: MediumSlateBlue;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.column{
+  flex: 50%;
+  max-width: 50%;
+  text-align: center;
+}
+#article{
+  text-align: center;
+}
+@media(max-width: 1100px) {
+  .column{
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+@media(min-width: 1550px){
+  .row{
+    padding-left: 200px;
+    padding-right: 200px;
+  }
